@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class= "container">
+        <div class="header">Header</div>
+        <div class= "one">One</div>
+        <div class= "two">Two</div>
+        <div class= "three">Three</div>
+       <div class="footer">Footer</div>
+      </div>
+
+      
+      .container{
+        background: lime;
+        padding: 10px;
+        display: grid;
+        grid-temple-ares:
+          " header header header"
+          "sidebar1 main sidebar2"
+          "footer footer footer"
+          grid-gap:20px;
+          
+      }
+      
+      .one{
+        background: blue;
+        padding: 10px;
+        color:#fff;
+        height: 100px;
+        grid-area:sidebar1;
+        
+      }
+      
+      .two{
+        background: yellow;
+        padding:20px;
+        color: black;
+        height: 100px;
+        grid-area:main;
+        
+      }
+      
+      .three{
+        background:green;
+        padding:20px;
+        color: white;
+        height:100px;
+        grid-area:sidebar2;
+        
+      }
+      
+      .header{
+        background: red;
+        height:100px;
+        grid-area:header;
+      }
+      
+      .footer{
+        background: red;
+        height:100px;
+        grid-area:footer;
+      }
+
+
+</body>
+</html>
